@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Utente {
+	
 	private String name;
 	private String lastName;
 	private String username;
@@ -13,10 +14,10 @@ public class Utente {
 	private boolean isLogged;
 	private int phone;
 	private List<String> addressList = new ArrayList<>();
-	private List<String> paymentMethods = new ArrayList<>();
+	private List<Pagamento> paymentMethods = new ArrayList<>();
 
 	public Utente(String name, String lastName, String username, String email, String password, String role,
-			boolean isLogged, int phone, List<String> addressList, List<String> paymentMethods) {
+			boolean isLogged, int phone, List<String> addressList, List<Pagamento> paymentMethods) {
 		super();
 		this.name = name;
 		this.lastName = lastName;
@@ -109,11 +110,11 @@ public class Utente {
 		this.addressList = addressList;
 	}
 
-	public List<String> getPaymentMethods() {
+	public List<Pagamento> getPaymentMethods() {
 		return paymentMethods;
 	}
 
-	public void setPaymentMethods(List<String> paymentMethods) {
+	public void setPaymentMethods(List<Pagamento> paymentMethods) {
 		this.paymentMethods = paymentMethods;
 	}
 

@@ -3,21 +3,20 @@ package models;
 import interfaces.Pagabile;
 
 public abstract class Pagamento implements Pagabile {
+	
 	private String name;
 	private String lastName;
 	private boolean isAccepted;
+	
 	@Override
 	public String toString() {
 		return "Pagamento [name=" + name + ", lastName=" + lastName + ", isAccepted=" + isAccepted + "]";
 	}
 
-
-
-	public Pagamento(String name, String lastName, boolean isAccepted) {
-		super();
+	public Pagamento(String name, String lastName) {
 		this.name = name;
 		this.lastName = lastName;
-		this.isAccepted = isAccepted;
+		isAccepted = false;
 	}
 
 	public String getName() {

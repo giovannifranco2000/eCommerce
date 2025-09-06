@@ -1,9 +1,10 @@
 package models;
 
 public class Prodotto {
+	
 	private String name;
 	private String description;
-	private String id;
+	private String id; // three digits category id + successive id number. e.g. 0030001 = first item of category 3
 	private Categoria category;
 	private int price;
 
