@@ -2,6 +2,6 @@ package repository;
 
 //salva in memoria permanente gli utenti
 
-public class UtenteRepository {
+public class UtenteDAO {
 
 }

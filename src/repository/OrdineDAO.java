@@ -2,6 +2,6 @@ package repository;
 
 // salva in memoria permanente gli ordini
 
-public class OrdineRepository {
+public class OrdineDAO {
 
 }
